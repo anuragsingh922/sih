@@ -1,0 +1,170 @@
+.back{
+    background-image: url("../Images/main_image.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: auto;
+    flex-shrink: 1;
+}
+
+.searchmain{
+    flex-shrink: 1;
+    border: 1px solid white;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.Started{
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: rgb(10, 167, 170);
+    cursor: pointer;
+    /* background-color: rgb(87, 211, 239); */
+}
+
+.searchinput{
+    width: 300px;
+    flex-shrink: auto;
+    padding: 5px;
+    font-size: large;
+    border: 1px solid white;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+.searchinput::placeholder{
+    background-color: transparent;
+    color: white;
+}
+
+.searchmain input{
+    outline: none;
+    flex-shrink: 2;
+}
+
+.heading{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding-top: 50px;
+}
+
+.heading2{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cat{
+    margin-top: 40px;
+    height: max-content;
+    margin-left: 60px;
+    padding-bottom: 20px;
+}
+
+.cat ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.catli{
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    border: 2px solid white;
+    margin-right: 20px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 12px 15px;
+    color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.catli:hover{
+    background-color: rgb(72, 70, 70);
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 30px;
+}
+
+
+.hospitals{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.options{
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.optionsul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+}
+
+.optionsli{
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
+
+
+.optionsli_image{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.optionsli_image img{
+    width: 100%;
+    height: 100%;
+}
