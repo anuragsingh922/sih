@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Main from './Components/Main';
 import Navbar from './Components/Navbar';
+import Locator from './Components/Locator';
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,6 +30,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact  path="/" element={<><Navbar/><Main showalert={showalert}/></>} />
+        <Route exact  path="/locator" element={<><Navbar/><Locator/></>} />
         <Route exact  path="/login" element={<><Alert alert={alert}/><Login showalert= {showalert}/></>} />
       <Route exact  path="/signup" element={<><Alert alert={alert}/><Signup showalert={showalert}/></>} />
       </Routes>

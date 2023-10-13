@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Main.css";
+import { Link } from 'react-router-dom';
 
 function Main() {
 
@@ -16,7 +17,7 @@ function Main() {
 
     <div className="search">
       <div className="searchmain">
-        <input type="text" className='searchinput' placeholder='Search for doctor' name='location' onChange={onChange}/>
+        <input type="text" className='searchinput' placeholder='e-waste' name='location' onChange={onChange}/>
         <button className='Started'>Get Started</button>
         </div>
     </div>
@@ -41,7 +42,7 @@ function Main() {
         <ul className='optionsul'>
             <li className="optionsli">
                 <div className="optionsli_image">
-                    <img src="../Images/main_image.jpg" alt="" />
+                    <img src="https://media.istockphoto.com/id/1387310509/photo/woman-putting-an-old-appliance-in-the-waste-bin.jpg?s=612x612&w=0&k=20&c=UBD_06Bgp-r5gccmoooenenK2333468OARZMoF96xPY=" alt="Imagee" />
                 </div>
                 <div className="optionsli_details">
                     <h3 className="optionsli_details_h3">
@@ -51,7 +52,7 @@ function Main() {
             </li>
             <li className="optionsli">
             <div className="optionsli_image">
-                    <img src="../Images/main_image.jpg" alt="" />
+                    <img src="https://media.istockphoto.com/id/474704407/vector/computers-waste.jpg?s=612x612&w=0&k=20&c=COAzDRkjXdkz9r5bWAlv2JmDtj9ik4GsGMKBwPtzWgo=" alt="Imagee" />
                 </div>
                 <div className="optionsli_details">
                     <h3 className="optionsli_details_h3">
@@ -61,7 +62,7 @@ function Main() {
             </li>
             <li className="optionsli">
             <div className="optionsli_image">
-                    <img src="../Images/main_image.jpg" alt="" />
+                    <img src="https://media.istockphoto.com/id/185234332/photo/electronics-recycling.jpg?s=612x612&w=0&k=20&c=KJ7tsHt8r9Dx3zRc6y3XJo2e0ymF7z0JC4jPzNK499E=" alt="Imagee" />
                 </div>
                 <div className="optionsli_details">
                     <h3 className="optionsli_details_h3">
@@ -69,16 +70,18 @@ function Main() {
                     </h3>
                 </div>
             </li>
-            <li className="optionsli">
+
+            <Link to="/locator"><li className="optionsli">
             <div className="optionsli_image">
-                    <img src="../Images/main_image.jpg" alt="" />
+                    <img src="https://media.istockphoto.com/id/1430371779/photo/recycling-electronic-waste.jpg?s=612x612&w=0&k=20&c=idfcQt6wb9vP1OlZdUo25tKI9abbqm0uCNQBGFcKkyg=" alt="Imagee" />
                 </div>
                 <div className="optionsli_details">
                     <h3 className="optionsli_details_h3">
-                        Facility Finder
+                        Facility Locator
                     </h3>
                 </div>
             </li>
+            </Link>
         </ul>
       </div>
 
