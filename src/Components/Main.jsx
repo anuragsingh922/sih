@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Main.css";
 import { Link } from "react-router-dom";
-
+import Howwework from "./Howwework";
 function Main() {
   const [data, setdata] = useState({ location: "" });
 
@@ -115,7 +115,9 @@ function Main() {
           </Link>
         </ul>
       </div>
-
+      <div>
+      {<Howwework />}
+      </div>
       <footer>© E-Paras </footer>
     </>
   );
