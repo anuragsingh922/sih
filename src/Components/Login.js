@@ -3,7 +3,6 @@ import './Signup.css'
 import {Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
-
 function Login(props) {
 
   const [logindata , setlogindata] = useState({email: "" , password: ""})
@@ -56,8 +55,8 @@ function Login(props) {
 
           <form onSubmit={submit} >
             <input type="email" id='email' className="email" name='email' onChange={onChange} value={logindata.email} placeholder='Email' /><br />
-            <input type="text" id='password' className="password" name='password' onChange={onChange} value={logindata.password} placeholder='Password' />
-            <button className='loginbutton'  type="submit" >Login</button>
+            <input type="text" id='password' className="password" name='password' onChange={onChange} value={logindata.password} placeholder='Password' /><br/><br/>
+            <button className='loginbuttondiv'  type="submit" >Login</button>
           </form>
 
 
@@ -65,8 +64,9 @@ function Login(props) {
       </div>
 
       <div className="second">
-        <div className="secondheading">New here</div>
-        <Link to='/signup'><div className='signupbuttondiv'>Signup</div></Link>
+        <div className="secondheading">New User! Create a new account here <br/> <br />
+        </div>
+        <Link to='/signup'><div className='loginbuttondiv'>Signup</div></Link>
       </div>
     </div>
   )

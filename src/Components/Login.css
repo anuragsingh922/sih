@@ -52,12 +52,15 @@ form input::placeholder{
     padding: 15px;
     width: 150px;
     border-radius: 10px;
+    cursor: pointer;
+    
 }
 
 .loginbuttondiv{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    cursor: pointer;
 }
 .second{
     background-color: aquamarine;
@@ -77,6 +80,7 @@ form input::placeholder{
     justify-content: center;
     margin-top: 30px;
     font-style: none;
+    cursor: pointer;
 }
 
 .signup{

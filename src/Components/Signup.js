@@ -1,9 +1,12 @@
-import React , {useState} from 'react'
+import React, { useState} from 'react';
 import './Signup.css'
 import {Link} from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+
 
 function Signup(props) {
+
+
 
   const [signupdata , setsigndata] = useState({name: "" , email: "" , password: ""})
 
@@ -43,24 +46,29 @@ function Signup(props) {
     <div className='main'>
     <div className="first">
     <div className="logo"><Link to='/' className='logolink'>E-PARAS</Link></div>
-      <div className="heading">Signup</div>
+      <div className="heading">Registration</div>
       <div className="formdiv">
 
 
         <form className="form" onSubmit={submit} >
-          <input type="text" className="email" id='name' name='name' placeholder='Name'  onChange={onChange} /><br />
+          <input type="text" className="namein" id='fname' name='fname' placeholder='First Name'  onChange={onChange} />
+          <input type="text" className="namein" id='lname' name='lname' placeholder='Last Name'  onChange={onChange} /><br /><br></br>
           <input type="email" className="email" id='email' name='email' placeholder='Email' onChange={onChange} /><br />
-          <input type="password" id='password' name='password' className="password" placeholder='Password' onChange={onChange}/>
-          <button className='loginbutton'>Sign Up</button>
+          <input type="password" id='password' name='password' className="password" placeholder='Password' onChange={onChange}/> 
+          <input type="password" id='cpassword' name='cpassword' className="password" placeholder='Confirm Password' onChange={onChange}/>
+          <br></br>
+          <br></br>
+          <input type="number" className="namein" id='phone' name='phone' placeholder='Phone Number' onChange={onChange} />
+          
+          <button className='signupbutton' type="submit">Sign Up</button>
         </form>
-
-
       </div>
     </div>
 
     <div className="second">
-      <div className="secondheading">Already have a account?</div>
-      <Link to='/login'><div className='signupbuttondiv'>Login</div></Link>
+      <div className="secondheading">Do not trash it, recycle your e-waste and make a difference !!</div>
+      <h2 className="subhead">Already have a account</h2>
+      <Link to='/login'><div className='loginbuttondiv'>Login</div></Link>
     </div>
   </div>
   )
