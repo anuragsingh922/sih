@@ -30,7 +30,7 @@ function Main() {
   return (
     <>
       <div className="back">
-        <div className="heading">
+        <div className="headingg">
           {text}
         </div>
 

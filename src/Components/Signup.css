@@ -1,7 +1,7 @@
 .main{
     display: flex;
     height: 100vh;
-    background-color: rgb(17, 28, 28);
+    /* background-color: rgb(17, 28, 28); */
 }
 
 .first{
@@ -26,6 +26,7 @@
 .heading{
     font-size: 30px;
     font-weight: 500;
+    color: black;
     margin-top: 5px;
 }
 
@@ -75,7 +76,7 @@ form input::placeholder{
 }
 .second{
 
-     background: radial-gradient(657px 657px at 10% 90%,#445069 0,#dcf1f600 40%),radial-gradient(642px 642px at 82% 115%,#5f7db8 0,#dcf1f600 25%),linear-gradient(-73.25deg,#316f7d 7.43%,#10328f 94.82%);
+    background: radial-gradient(657px 657px at 10% 90%,#3659a0 0,#dcf1f600 40%),radial-gradient(642px 642px at 82% 115%,#5f7db8 0,#dcf1f600 25%),linear-gradient(-73.25deg,#dcf2f7 7.43%,#59b9ca 94.82%);
    
 
     /* background-color: rgb(42, 20, 20); */
